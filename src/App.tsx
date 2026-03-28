@@ -4,6 +4,7 @@
 // import heroImg from './assets/hero.png'
 import './App.css'
 import Hero from './sections/Hero'
+import Navbar from './sections/Navbar'
 import Skills from './sections/Skills'
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
 
   return (
     <>
-      <main>
+      <main >
+        <Navbar />
         <Hero />
         <section>
           <h2>About</h2>
@@ -34,6 +36,61 @@ function App() {
           <h2>Contact</h2>
           <p>Contact section coming soon.</p>
         </section>
+        <section>
+          <h2>Experience</h2>
+          <p>Experience section coming soon.</p>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+          <p>Experience section coming soon.</p>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+          <p>Experience section coming soon.</p>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+          <p>Experience section coming soon.</p>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+          <p>Experience section coming soon.</p>
+        </section>
+        <section>
+          <h2>Experience</h2>
+          <p>Experience section coming soon.</p>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+          <p>Experience section coming soon.</p>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+          <p>Experience section coming soon.</p>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+          <p>Experience section coming soon.</p>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+          <p>Experience section coming soon.</p>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+          <p>Experience section coming soon.</p>
+        </section>
+
+
       </main>
       {/* <section id="center">
         <div className="hero">
