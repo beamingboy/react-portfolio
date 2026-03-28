@@ -35,13 +35,19 @@ function Navbar() {
         };
     }, []);
     return (
-        <header className="sticky top-0 z-50 w-full bg-white/70 shadow-sm backdrop-blur-xl">
+        <header
+            className="sticky top-0 z-50 w-full shadow-sm backdrop-blur-xl"
+            style={{
+                backgroundColor: "color-mix(in srgb, var(--color-nav) 70%, transparent)",
+                borderBottom: "1px solid var(--color-border)",
+            }}
+        >
             <nav className="mx-auto flex max-w-7xl items-center justify-between px-8 py-4">
-                <div className="text-xl font-bold tracking-tighter text-zinc-900">
-                    <a href="#hero">{personal.name}</a>
+                <div className="text-xl font-bold tracking-tighter text-zinc-900 font-[Manrope]" >
+                    <a href="#hero" style={{ color: "var(--color-heading)" }}>{personal.name}</a>
                 </div>
 
-                <div className="hidden items-center gap-6 text-sm font-medium text-[var(--color-text-surface)] sm:flex">
+                <div className="font-semibold hidden items-center gap-6 text-m font-medium text-[var(--color-text-surface)] sm:flex">
                     <a href="#about" className={`nav-link ${activeSection === "about" ? "nav-link-active" : ""}`}>
                         ABOUT
                     </a>
@@ -84,7 +90,7 @@ function Navbar() {
             {isOpen && (
                 <div className="border-t border-zinc-200 bg-white px-8 py-4 sm:hidden">
                     <div className="flex flex-col gap-4 text-sm font-medium text-[var(--color-text-surface)]">
-                        <div className="flex flex-col gap-4 text-sm font-medium text-[var(--color-text-surface)] pl-[2px]">
+                        <div className="font-semibold flex flex-col gap-4 text-sm font-medium text-[var(--color-text-surface)] pl-[2px]">
                             <a
                                 href="#about"
                                 onClick={() => setIsOpen(false)}

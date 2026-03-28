@@ -7,7 +7,7 @@ type ButtonProps = {
 function Button({ text, onClick, href }: ButtonProps) {
     const baseStyle = "inline-block rounded-lg px-4 py-2 text-sm font-medium transition";
 
-    const primaryStyle = "bg-[var(--color-primary)] text-white hover:opacity-90";
+    const primaryStyle = "bg-[var(--color-primary-button)] text-white hover:opacity-90";
 
     if (href) {
         return (

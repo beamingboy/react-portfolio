@@ -3,10 +3,8 @@ import type { Personal } from "../types/personal";
 
 const personal: Personal = {
     name: "Vinay Kumar",
-    title: "Software Engineer",
-    tagline: "Welcome to my digital realm!",
-    bio: "Strategic Software Engineer specializing in modern app development and business automation. Transforming requirements into scalable, clean solutions.",
-    location: "Adelaide, Australia",
+    title: "Software Engineer | Systems & Data Solutions",
+    bio: "Solutions-Oriented Technologist delivering software, system integrations, and data-driven solutions through scalable applications and workflow automation.",
     email: "vinaykumar.code@gmail.com",
     github: "https://github.com/beamingboy",
     linkedin: "https://www.linkedin.com/in/vinaykuma-r/",
