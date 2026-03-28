@@ -34,11 +34,11 @@ function Hero() {
                     </p>
 
                     <div className="flex flex-wrap gap-4">
-                        <Button text="View Projects" href="#projects" />
+                        <Button text="View Journey" href="#experience" />
 
                         <a
                             href="#about"
-                            className="rounded-md border px-8 py-4 text-lg font-bold transition-all hover:opacity-80"
+                            className="rounded-md border px-8 py-4 text-m font-bold transition-all hover:opacity-80"
                             style={{
                                 borderColor: "var(--color-primary)",
                                 color: "var(--color-heading)",
@@ -59,7 +59,7 @@ function Hero() {
                         <img
                             src="/images/profilePicture.png"
                             alt={personal.name}
-                            className="h-full w-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
+                            className="h-full w-full object-cover grayscale transition-[filter] duration-1000 ease-out hover:grayscale-0"
                         />
                     </div>
 

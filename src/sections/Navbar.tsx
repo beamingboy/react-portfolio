@@ -47,7 +47,7 @@ function Navbar() {
                     <a href="#hero" style={{ color: "var(--color-heading)" }}>{personal.name}</a>
                 </div>
 
-                <div className="font-semibold hidden items-center gap-6 text-m font-medium text-[var(--color-text-surface)] sm:flex">
+                <div className="font-semibold hidden items-center gap-6 text-m text-[var(--color-text-surface)] sm:flex">
                     <a href="#about" className={`nav-link ${activeSection === "about" ? "nav-link-active" : ""}`}>
                         ABOUT
                     </a>
