@@ -69,28 +69,28 @@ function Navbar() {
                 <button
                     type="button"
                     aria-label="Toggle menu"
-                    className="relative flex h-10 w-10 items-center justify-center sm:hidden"
+                    className="relative flex h-10 w-10 items-center justify-center sm:hidden transition-transform duration-300 ease-in-out"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     <span
-                        className={`absolute h-0.5 w-6 bg-zinc-900 transition-all duration-300 ${isOpen ? "rotate-45" : "-translate-y-2"
+                        className={`absolute h-0.5 w-6 bg-[var(--color-text)] origin-center transition-transform duration-300 ease-in-out ${isOpen ? "rotate-45" : "-translate-y-2"
                             }`}
                     />
                     <span
-                        className={`absolute h-0.5 w-6 bg-zinc-900 transition-all duration-300 ${isOpen ? "opacity-0" : "opacity-100"
+                        className={`absolute h-0.5 w-6 bg-[var(--color-text)] transition-all duration-300 ease-in-out ${isOpen ? "opacity-0 scale-x-0" : "opacity-100 scale-x-100"
                             }`}
                     />
                     <span
-                        className={`absolute h-0.5 w-6 bg-zinc-900 transition-all duration-300 ${isOpen ? "-rotate-45" : "translate-y-2"
+                        className={`absolute h-0.5 w-6 bg-[var(--color-text)] origin-center transition-transform duration-300 ease-in-out ${isOpen ? "-rotate-45" : "translate-y-2"
                             }`}
                     />
                 </button>
             </nav>
 
             {isOpen && (
-                <div className="border-t border-zinc-200 bg-white px-8 py-4 sm:hidden">
-                    <div className="flex flex-col gap-4 text-sm font-medium text-[var(--color-text-surface)]">
-                        <div className="font-semibold flex flex-col gap-4 text-sm font-medium text-[var(--color-text-surface)] pl-[2px]">
+                <div className="border-t border-zinc-200 px-8 py-4 sm:hidden">
+                    <div className="flex flex-col gap-4 text-sm font-medium text-[var(--color-nav)]">
+                        <div className="font-semibold flex flex-col gap-4 text-sm font-medium text-[var(--color-text)] pl-[2px]">
                             <a
                                 href="#about"
                                 onClick={() => setIsOpen(false)}

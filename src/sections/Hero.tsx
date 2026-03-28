@@ -1,5 +1,6 @@
 import personal from "../data/personal";
 import Button from "../components/Button";
+import socialLinks from "../data/socialLinks";
 
 function Hero() {
     // const startYear = 2023;
@@ -33,7 +34,7 @@ function Hero() {
                         {personal.bio}
                     </p>
 
-                    <div className="flex flex-wrap gap-4">
+                    <div className=" mb-6 flex flex-wrap gap-4">
                         <Button text="View Journey" href="#experience" />
 
                         <a
@@ -47,6 +48,26 @@ function Hero() {
                         >
                             About Me
                         </a>
+                    </div>
+                    <div className="ml-1 flex flex-wrap gap-4">
+                        {socialLinks.map((item) => {
+                            const Icon = item.icon;
+
+                            return (
+                                <a
+                                    key={item.id}
+                                    href={item.link}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    aria-label={item.name}
+                                    title={item.name}
+                                    className="transition duration-200 hover:-translate-y-[2px] hover:scale-110"
+                                    style={{ color: "var(--color-text)" }}
+                                >
+                                    <Icon />
+                                </a>
+                            );
+                        })}
                     </div>
                 </div>
 
